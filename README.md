@@ -12,7 +12,7 @@ Input data frame to produce diurnal *hourly* trend.
      - TimeColumn = string, name of time column in data frame df
      - Purpose: Generate diurnal hourly *median*. Also produces standard deviation and number of points for each bin.
 3. char_to_time()
-   - Purpose: convert string to as.POSIXct
+   - Purpose: convert string to as.POSIXct. This function is used by DiurnalAvg() and DiurnalMed()
  
  ## Installation
 ```
