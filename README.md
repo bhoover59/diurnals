@@ -16,7 +16,7 @@ Input data frame to produce diurnal *hourly* trend.
  
  ## Installation
 ```
- devtools::install_github('bhoover59/diurnals
+ devtools::install_github('bhoover59/diurnals)
 ```
 
 ## Example Usage
