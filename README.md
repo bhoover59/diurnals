@@ -13,7 +13,22 @@ Input data frame to produce diurnal trend. Consists of 3 functions
  -Purpose: convert string to as.POSIXct
  
  ## Installation
- '''
+```
  devtools::install_github('bhoover59/diurnals
- '''
+```
+
+## Example Usage
+```
+newDataFrame <- DiurnalAvg(df = DataFrame, TimeColumn = "Time)
+```
+```
+newDataFrame <- DiurnalMed(df = DataFrame, TimeColumn = "Time")
+```
+```
+newDataFrame$Time <- char_to_time(df[,Time])
+```
+
+## Future Updates
+1. Accept time already converted from string to as.POSIXct
+2. More time options than 1 hour
   
