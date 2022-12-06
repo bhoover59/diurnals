@@ -1,6 +1,6 @@
 # diurnals
 ## About
-Input data frame to produce diurnal *hourly* trend. 
+Input data frame to produce diurnal *hourly* trend. Error messages will occur for non-numeric values.
 1. DiurnalAvg()
    - Parameters
      - df = DataFrame with data to get diurnal trend
