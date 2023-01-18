@@ -21,7 +21,7 @@ devtools::install_github('bhoover59/diurnals')
 
 ## Example Usage
 ```
-newDataFrame <- DiurnalAvg(df = DataFrame, TimeColumn = "Time)
+newDataFrame <- DiurnalAvg(df = DataFrame, TimeColumn = "Time")
 ```
 ```
 newDataFrame <- DiurnalMed(df = DataFrame, TimeColumn = "Time")
