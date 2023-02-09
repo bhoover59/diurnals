@@ -1,7 +1,10 @@
 DiurnalAvg <- function(df, TimeColumn){
   # Convert time & create hourly bins
   df[,TimeColumn] <- diurnals::char_to_time(df[,TimeColumn])
-  df$Hour <- substr(df$Time, 12, 13) # specific to this time format
+  df$Hour <- substr(df[,TimeColumn], 12, 13) # specific to this time format
+  
+  # Delete time column
+  df <- df[,!names(df) %in% c(TimeColumn)]
 
   # Mean of each bin
   df_avg <- aggregate(df, by = list(df$Hour), FUN = mean, na.rm = TRUE)
