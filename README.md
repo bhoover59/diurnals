@@ -1,7 +1,14 @@
 # About Me
 Create diurnal trend for field campaign data
 ## Installation
-Must install devtools first
+If you need to install devtools
+```
+install.packages("devtools")
+```
+```
+library(devtools)
+```
+Installing diurnals package
 ```
 devtools::install_github("bhoover59/diurnals")
 ```
