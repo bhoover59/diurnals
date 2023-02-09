@@ -14,10 +14,10 @@ devtools::install_github("bhoover59/diurnals")
 ```
 
 ## Diurnal
--Inputs
+1. Inputs
   -df: data frame with field campaign data
   -TimeColumn: name of column with times. Can be any string format. Edit char_to_time function if additional formats needed
--Outputs:
+2. Outputs:
   -diurnal average
   -diurnal median
   -standard deviation for each bin
@@ -27,10 +27,10 @@ devtools::install_github("bhoover59/diurnals")
 diurnal <- Diurnal(df = df_name, TimeColumn = time_column_name)
 ```
 ## DiurnalAvg
--Inputs
+1. Inputs
   -df: data frame with field campaign data
   -TimeColumn: name of column with times. Can be any string format. Edit char_to_time function if additional formats needed
--Outputs:
+2. Outputs:
   -diurnal average
   -standard deviation for each bin
   -count for each bin
@@ -39,10 +39,10 @@ diurnal <- Diurnal(df = df_name, TimeColumn = time_column_name)
 diurnal_average <- DiurnalAvg(df = df_name, TimeColumn = time_column_name)
 ```
 ## DiurnalMed
--Inputs
+1. Inputs
   -df: data frame with field campaign data
   -TimeColumn: name of column with times. Can be any string format. Edit char_to_time function if additional formats needed
--Outputs:
+2. Outputs:
   -diurnal median
   -standard deviation for each bin
   -count for each bin
