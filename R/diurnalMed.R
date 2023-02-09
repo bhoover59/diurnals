@@ -1,8 +1,11 @@
 DiurnalMed <- function(df, TimeColumn){
   # Convert time & create hourly bins
   df[,TimeColumn] <- diurnals::char_to_time(df[,TimeColumn])
-  df$Hour <- substr(df$Time, 12, 13)
+  df$Hour <- substr(df[,TimeColumn], 12, 13)
 
+  # Delete time column
+  df <- df[,!names(df) %in% c(TimeColumn)]
+  
   # Median of each bin
   df_med <- aggregate(df, by = list(df$Hour), FUN = median, na.rm = TRUE)
   df_med <- df_med[,!names(df_med) %in% c("Hour")] # Delete Hour column filled with NA
