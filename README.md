@@ -2,9 +2,9 @@
 Create diurnal trend for field campaign data
 ## Installation
 Must install devtools first
-'''
+```
 devtools::install_github("bhoover59/diurnals")
-'''
+```
 
 ## Diurnal
 Inputs
