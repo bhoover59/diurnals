@@ -22,7 +22,7 @@ devtools::install_github("bhoover59/diurnals")
    - diurnal median
    - standard deviation for each bin
    - count for each bin
-   - **DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)**
+   - ** DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count) **
 ```
 diurnal <- Diurnal(df = df_name, TimeColumn = time_column_name)
 ```
