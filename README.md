@@ -15,10 +15,10 @@ Outputs:
 -diurnal median
 -standard deviation for each bin
 -count for each bin
--DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)
-'''
+-**DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)**
+```
 diurnal <- Diurnal(df = df_name, TimeColumn = time_column_name)
-'''
+```
 ## DiurnalAvg
 Inputs
 -df: data frame with field campaign data
@@ -27,10 +27,10 @@ Outputs:
 -diurnal average
 -standard deviation for each bin
 -count for each bin
--DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)
-'''
+-**DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)**
+```
 diurnal_average <- DiurnalAvg(df = df_name, TimeColumn = time_column_name)
-'''
+```
 ## DiurnalMed
 Inputs
 -df: data frame with field campaign data
@@ -39,8 +39,7 @@ Outputs:
 -diurnal median
 -standard deviation for each bin
 -count for each bin
--DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)
-'''
+-**DOES NOT CALCULATE SEM but that can easily be done by SEM = sd / sqrt(count)**
+```
 diurnal_median <- DiurnalMed(df = df_name, TimeColumn = time_column_name)
-'''
-
+```
