@@ -1,4 +1,4 @@
-calculate_time_average <- function(df, interval, time_column){
+time_average <- function(df, interval, time_column){
   # Convert time_column to POSIXct
   df[, time_column] <- diurnals::char_to_time(df[, time_column])
   
