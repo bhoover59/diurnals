@@ -60,3 +60,7 @@ diurnal_median <- DiurnalMed(df = df_name, TimeColumn = time_column_name)
 ```
 averaged_df <- time_average(df = df_name, interval = interval_minutes, TimeColumn = time_column_name)
 ```
+
+## Future work:
+   - Calculate standard error mean (SEM)
+   - Bin size for time_average
