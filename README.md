@@ -50,3 +50,13 @@ diurnal_average <- DiurnalAvg(df = df_name, TimeColumn = time_column_name)
 ```
 diurnal_median <- DiurnalMed(df = df_name, TimeColumn = time_column_name)
 ```
+## time_average
+1. Inputs
+   - df: data frame with field campaign data
+   - interval: time step interval **in minutes** to average
+   - TimeColumn: name of column with times. Can be any string format. Edit char_to_time function if additional formats needed
+2. Outputs:
+   - averaged data frame by input in minutes
+```
+averaged_df <- time_average(df = df_name, interval = interval_minutes, TimeColumn = time_column_name)
+```
