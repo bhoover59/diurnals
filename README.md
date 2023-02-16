@@ -13,9 +13,9 @@ Installing diurnals package
 devtools::install_github("bhoover59/diurnals")
 ```
 To remove the package
-'''
+```
 remove.packages("diurnals")
-'''
+```
 
 ## Diurnal
 1. Inputs
