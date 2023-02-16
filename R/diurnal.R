@@ -6,6 +6,9 @@ Diurnal <- function(df, TimeColumn){
   # Delete time column
   df <- df[,!names(df) %in% c(TimeColumn)]
   
+  # Convert character columns to numeric
+  df <- convert_char_to_numeric(df)
+  
   # Mean of each bin
   df_avg <- aggregate(df, by = list(df$Hour), FUN = mean, na.rm = TRUE)
   df_avg <- df_avg[,!names(df_avg) %in% c("Hour")] # Delete Hour column filled with NA
