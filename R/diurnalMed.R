@@ -6,6 +6,9 @@ DiurnalMed <- function(df, TimeColumn){
   # Delete time column
   df <- df[,!names(df) %in% c(TimeColumn)]
   
+  # Convert character columns to numeric
+  df <- convert_char_to_numeric(df)
+  
   # Median of each bin
   df_med <- aggregate(df, by = list(df$Hour), FUN = median, na.rm = TRUE)
   df_med <- df_med[,!names(df_med) %in% c("Hour")] # Delete Hour column filled with NA
