@@ -12,9 +12,17 @@ Installing diurnals package
 ```
 devtools::install_github("bhoover59/diurnals")
 ```
+Or if that doesn't work
+```
+remotes::install_github("bhoover59/diurnals")
+```
 To remove the package
 ```
 remove.packages("diurnals")
+```
+Or if that doesn't work
+```
+unloadNamespace("diurnals")
 ```
 
 ## Diurnal
