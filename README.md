@@ -16,7 +16,7 @@ Or if that doesn't work
 ```
 remotes::install_github("bhoover59/diurnals")
 ```
-To remove the package
+To remove the package go to Packages in RStudio and hit X on right side. If that doesn't work, try this
 ```
 remove.packages("diurnals")
 ```
