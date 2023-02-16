@@ -1,5 +1,5 @@
 # About Me
-Create diurnal trend for field campaign data
+Create diurnal trend for field campaign data. Functions automatically convert string times and characters.
 ## Installation
 If you need to install devtools
 ```
