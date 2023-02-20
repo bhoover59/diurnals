@@ -1,3 +1,4 @@
+![Alt text](Users/bodehoover/Downloads/MOBCAT.png?raw=true "Title")
 # About Me
 Create diurnal trend for field campaign data. Functions automatically convert string times and characters.
 ## Installation
