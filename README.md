@@ -1,5 +1,4 @@
-![MOBCAT](Users/bodehoover/Downloads/MOBCAT.png?raw=true "Title")
-<img src="Users/bodehoover/Downloads/MOBCAT.png" width="128"/>
+<img width="541" alt="MOBCAT" src="https://user-images.githubusercontent.com/77543359/220157629-2190a8ae-88b6-42e3-9f80-0ce0923f7d03.png">
 # About Me
 Create diurnal trend for field campaign data. Functions automatically convert string times and characters.
 ## Installation
