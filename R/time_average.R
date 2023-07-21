@@ -16,8 +16,8 @@ time_average <- function(df, interval, time_column){
   
   # Convert the group back to POSIXct format
   df_agg$Time <- as.POSIXct(as.character(df_agg$Group.1), format = "%m/%d/%Y %H:%M")
-  
-  df_agg <- df_agg[,!names(df_agg) %in% c(TimeColumn)]
+
+  # df_agg <- df_agg[,!names(df_agg) %in% c(time_column)]
   colnames(df_agg)[1] <- "Time"
   
   # Return the aggregated data frame
