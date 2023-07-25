@@ -26,6 +26,9 @@ remove.packages("diurnals")
 ```
 Or if that doesn't work
 ```
+detach("package:diurnals", unload = TRUE)
+```
+```
 unloadNamespace("diurnals")
 ```
 
