@@ -1,6 +1,6 @@
 # Author: Emily Reidy
 char_to_time <- function(TimeX){
-  formats = c("%m/%d/%Y %H:%M:%S", "%m/%d/%Y %I:%M:%S %p", "%Y-%m-%d %H:%M:%S", "%m/%d/%Y %H:%M", "%m/%d/%y %H:%M", "%m/%d/%Y", "%Y-%m-%d", "%H:%M:%S")
+  formats <- c("%m/%d/%Y %H:%M:%S", "%m/%d/%Y %I:%M:%S %p", "%I/%d/%Y %I:%M:%S %p", "%Y-%m-%d %H:%M:%S", "%m/%d/%Y %H:%M", "%m/%d/%y %H:%M", "%m/%d/%Y", "%Y-%m-%d")
   #Add extra formats to character vector above
   #formats tested in order, so go from most specific to least specific,
   #as the first one that works will be used
