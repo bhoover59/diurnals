@@ -1,11 +1,11 @@
 # Author: Bode Hoover
 char_to_time <- function(TimeX) {
   formats <- c(
+    "%m/%d/%Y %H:%M",       # e.g., 01/01/2023 12:00
+    "%m/%d/%Y %I:%M %p",    # e.g., 01/01/2023 12:00 PM
+    "%I/%d/%Y %I:%M %p",    # e.g., 01/01/2023 12:00 PM (updated format)
+    "%Y-%m-%d %H:%M",       # e.g., 2023-01-01 12:00
     "%m/%d/%Y %H:%M:%S",    # e.g., 01/01/2023 12:00:00
-    "%m/%d/%Y %I:%M:%S %p", # e.g., 01/01/2023 12:00:00 PM
-    "%I/%d/%Y %I:%M:%S %p", # e.g., 01/01/2023 12:00:00 PM (updated format)
-    "%Y-%m-%d %H:%M:%S",    # e.g., 2023-01-01 12:00:00
-    "%m/%d/%Y %H:%M",       # e.g., 01/01/2023 12:00 (updated format)
     "%m/%d/%y %H:%M",       # e.g., 01/01/23 12:00
     "%m/%d/%Y",             # e.g., 01/01/2023
     "%Y-%m-%d"              # e.g., 2023-01-01
