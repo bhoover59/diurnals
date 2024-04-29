@@ -77,7 +77,7 @@ diurnal_median <- DiurnalMed(df = df_name, TimeColumn = time_column_name)
 2. Outputs:
    - averaged data frame by input in minutes
 ```
-averaged_df <- time_average(df = df_name, interval = interval_minutes, TimeColumn = time_column_name)
+averaged_df <- time_average(df = df_name, interval = interval_minutes, time_column = 'time_column_name')
 ```
 
 ## Future work:
