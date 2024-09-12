@@ -42,8 +42,8 @@ Diurnal <- function(df, TimeColumn){
   df_list <- list(df_avg, df_sd, df_count, df_med)
   df_tot <- Reduce(function(x, y) merge(x, y, all = TRUE), df_list)
 
-    for (i in 0:9){
-    df_tot$Hour[i + 1] <- i # Change 00, 01, 02 etc to 0, 1, 2 etc
+  for (i in 0:23){
+    df_tot$Hour[i] <- i # Change 00, 01, 02 etc to 0, 1, 2 etc
   }
   df_tot
 }
